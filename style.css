@@ -2,6 +2,11 @@
   overflow: hidden;
 }
 
+.wrap-inner {
+  max-width: 1026px;
+  margin: 0 auto;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -22,6 +27,7 @@ header {
   top: 0;
   box-shadow: 0px 1px 10px gray;
   background-color: #ffffff;
+  margin: 0 auto;
 }
 
 .header-top {
@@ -103,12 +109,17 @@ header {
 
 /* main-1 */
 
+.main-wrapper {
+  position: relative;
+}
+
 .main-1 {
   display: flex;
   max-width: 1366px;
   width: 100%;
-  margin: 0 192px;
   position: relative;
+  padding: 0 30px;
+  box-sizing: border-box;
 }
 
 .main1-contents h1 {
@@ -118,7 +129,7 @@ header {
 }
 
 .main1-contents {
-  margin: 262px 133px 155px 0;
+  margin: 262px 0 0 0;
 }
 
 .main1-contents p {
@@ -131,26 +142,33 @@ header {
   text-align: right;
   position: absolute;
   top: -30px;
-  left: 585px;
+  right: -80px;
 }
 
 .manager {
   width: 518px;
   height: 430px;
-  margin: 225px 172px 113px 229px;
+  margin: 225px 172px 113px 235px;
   position: absolute;
+  top: 50px;
   left: 265px;
+  z-index: 2;
+}
+
+.main1-contact {
+  margin: 0 auto;
 }
 
 /* main-2 */
 .main-2 {
   text-align: center;
-  margin-bottom: 100px;
+  margin: 200px auto 100px auto;
+  padding: 0 30px;
 }
 
 .main2-contents {
   display: flex;
-  margin: 0 192px;
+  /* margin: 0 192px; */
   justify-content: space-between;
 }
 
@@ -192,11 +210,12 @@ header {
 .main-3 {
   text-align: center;
   margin-bottom: 100px;
+  padding: 0 30px;
 }
 
 .main3-contents {
   display: flex;
-  margin: 0 192px;
+  /* margin: 0 192px; */
   justify-content: space-between;
   flex-direction: row-reverse;
 }
@@ -214,11 +233,12 @@ header {
 .main-4 {
   text-align: center;
   margin-bottom: 100px;
+  padding: 0 30px;
 }
 
 .main4-contents {
   display: flex;
-  margin: 0 192px;
+  /* margin: 0 192px; */
   justify-content: space-between;
 }
 
@@ -362,22 +382,26 @@ table {
 
 .blog-wrapper {
   display: flex;
-  max-width: 1260px;
+  /* max-width: 1260px; */
   width: 100%;
   justify-content: space-between;
 }
 
 .blog-contents {
   background-color: #ffffff;
-  max-width: 389px;
+  max-width: 456px;
   width: 100%;
-  max-height: 387px;
-  width: 100%;
+  height: auto;
   box-shadow: 0px 3px 6px #00000029;
+  margin-right: 20px;
+}
+
+.blog-last {
+  margin: 0;
 }
 
 .blog img {
-  max-width: 389px;
+  max-width: 456px;
   width: 100%;
   height: auto;
 }
@@ -404,7 +428,7 @@ table {
 
 .works {
   text-align: center;
-  padding: 55px 0;
+  padding: 55px 45px;
 }
 
 .works-contents img {
@@ -491,7 +515,8 @@ table {
 .form-item input {
   background-color: #eefbfb;
   border: none;
-  width: 499px;
+  max-width: 499px;
+  width: 100%;
   height: 43px;
   margin-top: 39px;
   margin-bottom: 27px;
@@ -618,7 +643,7 @@ footer {
 
   .nav-toggle i {
     position: fixed;
-    z-index: 100;
+    z-index: 110;
     display: block;
     width: 100%;
     height: 3px;
@@ -653,7 +678,7 @@ footer {
   
   .nav {
     position: fixed;
-    top: 3rem;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -668,6 +693,15 @@ footer {
     visibility: visible;
     padding: 0;
     display: block;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    justify-content: center;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: 0;
   }
   
   .nav-menu-li {
@@ -683,24 +717,23 @@ footer {
   }
   
   .nav-menu-ul {
-    padding: 150px 0;
+    /* padding: 150px 0; */
     margin: 0;
     max-width: 400px;
     width: 100%;
-    height: 148px;
+    height: auto;
     background-color: #ffffff;
-    position: absolute;
-    top: -20px;
-    right: -20px;
+    margin-left: auto;
+    margin-right: 0;
   }
 
   .main-1 {
     text-align: center;
-    margin: 0;
+    margin: 0 auto;
     position: relative;
     max-width: 920px;
     height: 900px;
-    padding: 0 40px;
+    padding: 0;
   }
 
   .main1-contents {
@@ -712,6 +745,7 @@ footer {
 
   .main1-contact {
     display: inline-block;
+    margin: 0 auto;
   }
 
   .daenn {
@@ -723,13 +757,20 @@ footer {
   }
 
   .manager{
+    /* position: absolute; */
     width: 310px;
     height: 258px;
-    display: inline-block;
-    top: 400px;
-    right: 180px;
-    left: auto;
+    margin: 30px auto 0 auto;
+    position: static;
+    /* top: 400px;
+    right: 300px; */
+    /* left: auto; */
     text-align: center;
+    /* margin: 225px auto 113px auto; */
+  }
+
+  .main-2 {
+    margin: 0;
   }
 
   .main2-h1 {
@@ -893,7 +934,7 @@ footer {
   }
 
   .works-section {
-    overflow-x: auto;
+    /* overflow-x: auto; */
     width: 100%;
   }
 
@@ -915,6 +956,62 @@ footer {
     height: auto;
     padding: 34px 36px;
     margin: 0 auto;
+  }
+
+}
+
+@media screen and (max-width: 599px) {
+  .main-1 {
+    max-width: 380px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    height: 830px;
+  }
+
+  .main1-contents {
+    margin: 200px 14px 30px 14px;
+  }
+
+  .manager {
+    margin: 0 auto;
+    position: absolute;
+    top: 600px;
+    left: 10%;
+  }
+
+  .daenn {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  }
+
+  .br-none {
+    display: none;
+  }
+
+  .form-input {
+    width: 100%;
+  }
+
+  .works-section {
+    width: 100%;
+  }
+
+  .nav-menu-ul {
+    max-width: 599px;
+    width: 100%;
+    height: auto;
+    z-index: 105;
+    align-items: center;
+    padding: 0;
+  }
+
+  .nav.show {
+    margin: 0;
+    max-width: 599px;
+    width: 100%;
+    height: auto;
   }
 
 }
