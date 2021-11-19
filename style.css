@@ -544,7 +544,8 @@ input[type="checkbox" i] {
 }
 
 .checkbox-contents {
-  width: 270px;
+  max-width: 270px;
+  width: 100%;
   margin: 0 auto 30px auto;
 }
 
@@ -974,7 +975,7 @@ footer {
   }
 
   .manager {
-    margin: 0 auto;
+    margin: 30px auto 0 auto;
     position: absolute;
     top: 600px;
     left: 10%;
@@ -982,8 +983,8 @@ footer {
 
   .daenn {
     position: absolute;
-    top: 10%;
-    left: 10%;
+    top: -30px;
+    left: 80px;
   }
 
   .br-none {
@@ -1012,6 +1013,10 @@ footer {
     max-width: 599px;
     width: 100%;
     height: auto;
+  }
+  
+  .footer {
+    display: block;
   }
 
 }
