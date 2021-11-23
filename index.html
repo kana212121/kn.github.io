@@ -344,6 +344,11 @@ $('#js-submit').on('click', function(){
         });
         event.preventDefault();
       });
+    
+    $(".nav-menu-li a").on("click", function() {
+      $('.nav-toggle,.nav').toggleClass('show');
+      $('.nav-toggle').toggleClass('height-change');
+    });
 
   });
 
